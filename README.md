@@ -15,3 +15,11 @@ The procedure roughly follows the [FFF_Template](https://github.com/xchem/FFF_Te
 - Create target directory in this repo
 - Create cycle subdirectory in target directory
 - Copy cycle_01.ipynb from existing cycle directory
+
+## History
+
+|     Cycle     | Hits | Fragmenstein | Knitwork Pure | Knitwork Impure | Acceptable BulkDock |
+|---------------|------|--------------|---------------|-----------------|---------------------|
+| xx01zvns2b-01 |  337 |              |               |                 |                     |
+| a71ev2a-01    |  645 |              |               |                 |                     |
+| d68ev3c-01    |  202 |              |               |                 |                     |
