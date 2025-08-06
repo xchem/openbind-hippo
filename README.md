@@ -8,3 +8,10 @@ HIPPO notebooks driving the algorithmics for OpenBind phase 0
 
 This repository documents the phase 0 fragment merging, compound ordering, elaboration and downsampling done with HIPPO.
 The procedure roughly follows the [FFF_Template](https://github.com/xchem/FFF_Template/blob/main/README.md)
+
+### Starting on a new target
+
+- Download Fragalysis target to $BULK/TARGETS using fragalysis_download.ipynb
+- Create target directory in this repo
+- Create cycle subdirectory in target directory
+- Copy cycle_01.ipynb from existing cycle directory
