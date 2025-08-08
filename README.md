@@ -20,5 +20,5 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 |     Cycle     | Hits | Fragmenstein | Knitwork Pure | Knitwork Impure | Acceptable BulkDock |
 |---------------|------|--------------|---------------|-----------------|---------------------|
 | `xx01zvns2b-01` |  337 |              |               |                 |                     |
-| `a71ev2a-01`    |  645 |              |               |                 |                     |
-| `d68ev3c-01`    |  202 |              |               |                 |                     |
+| `a71ev2a-01`    |  645 |  |               |                 |                     |
+| `d68ev3c-01`    |  202 | 6356 (8h) |               |                 |                     |
