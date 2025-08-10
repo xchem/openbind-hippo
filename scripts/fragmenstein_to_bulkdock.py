@@ -12,9 +12,6 @@ app = Typer()
 @app.command()
 def create_bulkdock_inputs():
 
-    subdir = Path(subdir)
-    assert subdir.exists()
-
     fstein_df = pd.read_csv("output.csv")
 
     data = []
@@ -43,7 +40,7 @@ def create_bulkdock_inputs():
 
     df = pd.DataFrame(data)
 
-    outfile = f"{subdir.name}_fstein_bulkdock_input.csv"
+    outfile = f"fragmenstein_bulkdock_input.csv"
     mrich.writing(outfile)
     df.to_csv(outfile, index=False)
 
@@ -51,4 +48,4 @@ def create_bulkdock_inputs():
 if __name__ == "__main__":
     app()
 
-# python to_bulkdock.py iter1_frags
+# python to_bulkdock.py
