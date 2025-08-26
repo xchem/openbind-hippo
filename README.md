@@ -19,6 +19,6 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 
 |     Cycle     | Hits | Fragmenstein | Knitwork Pure | Knitwork Impure | Acceptable Placements |
 |---------------|------|--------------|---------------|-----------------|-----|
-| `xx01zvns2b-01` |  `337` | `98k` (14h) | `140k` | `150k` | `1665` |
+| `xx01zvns2b-01` |  `337` | `98k->25k` (14h) | `140k->15k` | `150k->12k` | `50k` |
 | `a71ev2a-01`    |  `645` | `306k` (3.5d) | `1.6M` | `1.9M` (11h) |                     |
-| `d68ev3c-01`    |  `202` | `6356->1665` (8h) | `268k` | `285k` (14h) |                     |
+| `d68ev3c-01`    |  `202` | `6356->1665` (8h) | `268k->19k` | `285k->12k` (14h) | 31k |
