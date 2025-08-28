@@ -17,8 +17,8 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 
 ## Merge stats
 
-|     Cycle     | Hits | Fragmenstein | Knitwork Pure | Knitwork Impure | Acceptable Placements |
-|---------------|------|--------------|---------------|-----------------|-----|
-| `xx01zvns2b-01` |  `337` | `98k` (14h) | `140k` | `150k` | `1665` |
-| `a71ev2a-01`    |  `645` | `>34k` (18h+) | `1.6M` | `1.9M` (11h) |                     |
-| `d68ev3c-01`    |  `202` | `6356->1665` (8h) | `268k` | `285k` (14h) |                     |
+|     Cycle     | Hits | Fragmenstein | Knitwork Pure | Knitwork Impure | Acceptable Placements | Exported Scaffolds |
+|---------------|------|--------------|---------------|-----------------|-----|----|
+| `xx01zvns2b-01` |  `337` | `98k->25k->2825` (14h) | `140k->15k->411` | `150k->12k->378` | `50k` | `3614` |
+| `a71ev2a-01`    |  `645` | `306k` (3.5d) | `1.6M` | `1.9M` (11h) |                     | |
+| `d68ev3c-01`    |  `202` | `6356->1665->153` (8h) | `268k->19k->83` | `285k->12k->109` (14h) | `31k` | `345` |
