@@ -27,6 +27,14 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 
 ### d68ev3c
 
-3 major clusters?
+5 pockets?
+<img width="596" height="568" alt="Screenshot 2025-08-28 at 16 21 46" src="https://github.com/user-attachments/assets/3e822e57-90cb-43f8-a8b3-dedfc7226b4f" />
 
-<img width="500" height="400" alt="Screenshot 2025-08-28 at 16 17 57" src="https://github.com/user-attachments/assets/494e52a4-d64e-4f8d-87bf-b740999d0891" />
+### a71ev2a
+
+
+
+### xx01zvns2b
+
+3 pockets?
+<img width="904" height="999" alt="Screenshot 2025-08-28 at 16 23 18" src="https://github.com/user-attachments/assets/b503fc6c-840f-4e55-bb03-9524da2dcffc" />
