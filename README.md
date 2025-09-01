@@ -20,5 +20,33 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 |     Cycle     | Hits | Fragmenstein | Knitwork Pure | Knitwork Impure | Acceptable Placements | Exported Scaffolds |
 |---------------|------|--------------|---------------|-----------------|-----|----|
 | `xx01zvns2b-01` |  `337` | `98k->25k->2825` (14h) | `140k->15k->411` | `150k->12k->378` | `50k` | `3614` |
-| `a71ev2a-01`    |  `645` | `306k` (3.5d) | `1.6M` | `1.9M` (11h) |                     | |
+| `a71ev2a-01`    |  `645` | `306k->61k->309` (3.5d) | `1.6M->30k->396` | `1.9M->22k->813` (11h) | `114k` | `1518` |
 | `d68ev3c-01`    |  `202` | `6356->1665->153` (8h) | `268k->19k->83` | `285k->12k->109` (14h) | `31k` | `345` |
+
+## Pocket stats
+
+### d68ev3c
+
+5 pockets?
+<img width="596" height="568" alt="Screenshot 2025-08-28 at 16 21 46" src="https://github.com/user-attachments/assets/3e822e57-90cb-43f8-a8b3-dedfc7226b4f" />
+
+### a71ev2a
+
+```
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ subsite            ┃ num_poses ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 1 - Active Site    │ 1431      │
+│ 6 - A0486/A/147/1  │ 79        │
+│ 5 - A3181/A/202/1  │ 73        │
+│ 3 - A0541/A/147/1  │ 62        │
+│ 2 - A3977/A/202/1  │ 44        │
+│ 17 - A1081/A/201/1 │ 30        │
+│ 4 - A0525/A/246/1  │ 16        │
+└────────────────────┴───────────┘
+```
+
+### xx01zvns2b
+
+3 pockets?
+<img width="904" height="999" alt="Screenshot 2025-08-28 at 16 23 18" src="https://github.com/user-attachments/assets/b503fc6c-840f-4e55-bb03-9524da2dcffc" />
