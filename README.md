@@ -27,7 +27,28 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 
 ### d68ev3c
 
-5 pockets?
+```
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ subsite            ┃ num_poses ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 2 - 7gon/B/201/1   │ 176       │
+│ 1 - 7gp9/A/201/1   │ 111       │
+│ 4 - 7gp7/A/201/1   │ 61        │
+│ 5 - B1120/A/308/1  │ 42        │
+│ 3 - 7gpw/B/202/1   │ 17        │
+│ 11 - B0517/A/209/1 │ 14        │
+│ 10 - 7gq5/A/201/1  │ 8         │
+│ 30 - 7gqr/B/201/1  │ 8         │
+│ 14 - 7go6/A/201/1  │ 5         │
+│ 15 - 7gob/B/201/1  │ 2         │
+│ 17 - 7gok/A/201/1  │ 1         │
+│ 24 - 7gpz/B/201/1  │ 1         │
+│ 25 - 7gq1/A/201/1  │ 1         │
+│ 28 - 7gqn/A/201/1  │ 1         │
+│ 29 - 7gqn/A/202/1  │ 1         │
+└────────────────────┴───────────┘
+```
+
 <img width="596" height="568" alt="Screenshot 2025-08-28 at 16 21 46" src="https://github.com/user-attachments/assets/3e822e57-90cb-43f8-a8b3-dedfc7226b4f" />
 
 ### a71ev2a
@@ -48,5 +69,14 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 
 ### xx01zvns2b
 
-3 pockets?
+```
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ subsite           ┃ num_poses ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 1 - Z4590/B/203/1 │ 3614      │
+│ 6 - Z0788/B/302/1 │ 24        │
+│ 5 - Z0773/B/401/1 │ 13        │
+│ 7 - Z0846/B/301/1 │ 9         │
+└───────────────────┴───────────┘
+```
 <img width="904" height="999" alt="Screenshot 2025-08-28 at 16 23 18" src="https://github.com/user-attachments/assets/b503fc6c-840f-4e55-bb03-9524da2dcffc" />
