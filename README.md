@@ -69,5 +69,14 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 
 ### xx01zvns2b
 
-3 pockets?
+```
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ subsite           ┃ num_poses ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ 1 - Z4590/B/203/1 │ 3614      │
+│ 6 - Z0788/B/302/1 │ 24        │
+│ 5 - Z0773/B/401/1 │ 13        │
+│ 7 - Z0846/B/301/1 │ 9         │
+└───────────────────┴───────────┘
+```
 <img width="904" height="999" alt="Screenshot 2025-08-28 at 16 23 18" src="https://github.com/user-attachments/assets/b503fc6c-840f-4e55-bb03-9524da2dcffc" />
