@@ -32,6 +32,7 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 
 ### a71ev2a
 
+```
 ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
 ┃ subsite            ┃ num_poses ┃
 ┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
@@ -43,6 +44,7 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 │ 17 - A1081/A/201/1 │ 30        │
 │ 4 - A0525/A/246/1  │ 16        │
 └────────────────────┴───────────┘
+```
 
 ### xx01zvns2b
 
