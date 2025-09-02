@@ -15,13 +15,15 @@ Make sure to do the pre-requisites of the FFF_Template
 
 Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or cycle
 
-## Merge stats
+## Merge (compound) stats
+
+Legend: `CSV rows` `unique smiles` `compounds with placements` `exported scaffolds`
 
 |     Cycle     | Hits | Fragmenstein | Knitwork Pure | Knitwork Impure | Acceptable Placements | Exported Scaffolds | Retro OK (Manifold) | Selected Chemistry
 |---------------|------|--------------|---------------|-----------------|-----|----|---|---|
-| `xx01zvns2b-01` |  `337` | `98k->25k->2825` (14h) | `140k->15k->411` | `150k->12k->378` | `50k` | `3614` | | |
-| `a71ev2a-01`    |  `645` | `306k->61k->309` (3.5d) | `1.6M->30k->396` | `1.9M->22k->813` (11h) | `114k` | `1518` | `1060` | |
-| `d68ev3c-01`    |  `202` | `6356->1665->153` (8h) | `268k->19k->83` | `285k->12k->109` (14h) | `31k` | `345` | `200` | |
+| `xx01zvns2b-01` |  `337` | `98k` `73k` `25k` `2825` (14h) | `140k` `34k` `15k` `411` | `150k` `27k` `12k` `378` | `50k` | `3614` | | |
+| `a71ev2a-01`    |  `645` | `306k` `168k` `61k` `309` (3.5d) | `1.6M` `89k` `30k` `396` | `1.9M` `63k` `22k` `813` (11h) | `114k` | `1518` | `1213` | |
+| `d68ev3c-01`    |  `228` | `6356` `4829` `1665` `153` (8h) | `269k` `58k` `19k` `83` | `286k` `44k` `12k` `109` (14h) | `31k` | `345` | `200` | |
 
 ## Pocket stats
 
