@@ -66,6 +66,9 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 | Knitwork Impure | Compounds w/ Placements | `12000` |
 | Knitwork Impure | Filtered Scaffolds | `378` |
 
+<img width="853" height="1077" alt="Screenshot 2025-09-02 at 09 36 00" src="https://github.com/user-attachments/assets/b704912f-b4b6-45c4-901a-ee52c38a20ab" />
+
+
 ## Pocket stats
 
 ### d68ev3c
