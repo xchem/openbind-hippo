@@ -17,13 +17,54 @@ Use the notebook `notebooks/setup_cycle.ipynb` to set up for a new target and/or
 
 ## Merge (compound) stats
 
-Legend: `CSV rows` `unique smiles` `compounds with placements` `exported scaffolds`
-
-|     Cycle     | Hits | Fragmenstein | Knitwork Pure | Knitwork Impure | Acceptable Placements | Exported Scaffolds | Retro OK (Manifold) | Selected Chemistry
-|---------------|------|--------------|---------------|-----------------|-----|----|---|---|
-| `xx01zvns2b-01` |  `337` | `98k` `73k` `25k` `2825` (14h) | `140k` `34k` `15k` `411` | `150k` `27k` `12k` `378` | `50k` | `3614` | | |
-| `a71ev2a-01`    |  `645` | `306k` `168k` `61k` `309` (3.5d) | `1.6M` `89k` `30k` `396` | `1.9M` `63k` `22k` `813` (11h) | `114k` | `1518` | `1213` | |
-| `d68ev3c-01`    |  `228` | `6356` `4829` `1665` `153` (8h) | `269k` `58k` `19k` `83` | `286k` `44k` `12k` `109` (14h) | `31k` | `345` | `200` | |
+### a71ev2a-01
+| Method | Type | Value |
+|---|---|---|
+| XChem Hits | Structures | `645` |
+| Fragmenstein Pure | Placement Attempts | `306598` |
+| Fragmenstein Pure | Unique Compounds | `168303` |
+| Fragmenstein Pure | Compounds w/ Placements | `61000` |
+| Fragmenstein Pure | Filtered Scaffolds | `309` |
+| Knitwork Pure | Placement Attempts | `1616879` |
+| Knitwork Pure | Unique Compounds | `89045` |
+| Knitwork Pure | Compounds w/ Placements | `30000` |
+| Knitwork Pure | Filtered Scaffolds | `396` |
+| Knitwork Impure | Placement Attempts | `1870052` |
+| Knitwork Impure | Unique Compounds | `62735` |
+| Knitwork Impure | Compounds w/ Placements | `22000` |
+| Knitwork Impure | Filtered Scaffolds | `813` |
+### d68ev3c-01
+| Method | Type | Value |
+|---|---|---|
+| XChem Hits | Structures | `228` |
+| Fragmenstein Pure | Placement Attempts | `6356` |
+| Fragmenstein Pure | Unique Compounds | `4829` |
+| Fragmenstein Pure | Compounds w/ Placements | `1665` |
+| Fragmenstein Pure | Filtered Scaffolds | `153` |
+| Knitwork Pure | Placement Attempts | `268518` |
+| Knitwork Pure | Unique Compounds | `58416` |
+| Knitwork Pure | Compounds w/ Placements | `19000` |
+| Knitwork Pure | Filtered Scaffolds | `83` |
+| Knitwork Impure | Placement Attempts | `285885` |
+| Knitwork Impure | Unique Compounds | `43631` |
+| Knitwork Impure | Compounds w/ Placements | `12000` |
+| Knitwork Impure | Filtered Scaffolds | `109` |
+### xx01zvns2b-01
+| Method | Type | Value |
+|---|---|---|
+| XChem Hits | Structures | `337` |
+| Fragmenstein Pure | Placement Attempts | `98444` |
+| Fragmenstein Pure | Unique Compounds | `72617` |
+| Fragmenstein Pure | Compounds w/ Placements | `25000` |
+| Fragmenstein Pure | Filtered Scaffolds | `2825` |
+| Knitwork Pure | Placement Attempts | `140608` |
+| Knitwork Pure | Unique Compounds | `33788` |
+| Knitwork Pure | Compounds w/ Placements | `15000` |
+| Knitwork Pure | Filtered Scaffolds | `411` |
+| Knitwork Impure | Placement Attempts | `146763` |
+| Knitwork Impure | Unique Compounds | `26774` |
+| Knitwork Impure | Compounds w/ Placements | `12000` |
+| Knitwork Impure | Filtered Scaffolds | `378` |
 
 ## Pocket stats
 
