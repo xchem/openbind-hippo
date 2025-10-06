@@ -1,0 +1,154 @@
+#/bin/bash 
+
+JOBIDS="567004 567006 567012 567016 567020 567023 567025 567024 567057 567084 567083 567086 567089 567090 567092 567091 567093 567094 567098 567100 567101 567109 567118 567117 567121 567124 567126 567131 567137 567149 567150 567153 567151 567156 567159 567165 567175 567179 567182 567183 567191 567196 567220 567223 567226 567231 567255 567260 567274 567275 567277 567278 567283 567291 567294 567306 567311 567322 567324 567338 567343 567345 567346 567352 567351 567357 567358 567359 567360 567364 567371 567383 567391 567392 567394 567395 567396 567401 567407 567406 567414 567415 567418 567419 567433 567436 567437 567438 567442 567456 567462 567464 567479 567488 567491 567494 567497 567498 567501 567502 567504 567507 567512 567525 567532 567535 567539 567544 567489 567444 567531 567288 570593 570596 570604 570606 570618 570616 570628 570638 570645 570669 570672 570673 570674 570694 570710 570722 570759 570773 570878 570888 570916 570922 570927 570928 570934 570940 570953 570970 571012 571039 571099 570926 570962 570661"
+
+for ID in $JOBIDS; do
+	echo $ID
+done
+
+# 567004  c01_elabs_C102808_syndirella_input  Sep 30th 14:49      8h 13m 19s  Out Of Memory
+# 567006  c01_elabs_C10335_syndirella_input   Sep 30th 14:49         22m 54s  Out Of Memory
+# 567012  c01_elabs_C10549_syndirella_input   Sep 30th 14:49      3h 18m 33s  Out Of Memory
+# 567016  c01_elabs_C106545_syndirella_input  Sep 30th 14:49         55m 52s  Out Of Memory
+# 567020  c01_elabs_C10704_syndirella_input   Sep 30th 14:49         56m 29s  Out Of Memory
+# 567023  c01_elabs_C10831_syndirella_input   Sep 30th 14:49       6h 23m 2s  Out Of Memory
+# 567025  c01_elabs_C11207_syndirella_input   Sep 30th 14:49         58m 28s  Out Of Memory
+# 567024  c01_elabs_C11204_syndirella_input   Sep 30th 14:49       1h 4m 11s  Out Of Memory
+# 567057  c01_elabs_C129593_syndirella_input  Sep 30th 14:49         54m 37s  Out Of Memory
+# 567084  c01_elabs_C1384_syndirella_input    Sep 30th 14:49       1h 7m 15s  Out Of Memory
+# 567083  c01_elabs_C1382_syndirella_input    Sep 30th 14:49      1h 36m 18s  Out Of Memory
+# 567086  c01_elabs_C1386_syndirella_input    Sep 30th 14:49      1h 41m 22s  Out Of Memory
+# 567089  c01_elabs_C1391_syndirella_input    Sep 30th 14:49          51m 6s  Out Of Memory
+# 567090  c01_elabs_C1392_syndirella_input    Sep 30th 14:49          1h 22s  Out Of Memory
+# 567092  c01_elabs_C1401_syndirella_input    Sep 30th 14:49       1h 3m 58s  Out Of Memory
+# 567091  c01_elabs_C1399_syndirella_input    Sep 30th 14:49         48m 24s  Out Of Memory
+# 567093  c01_elabs_C1404_syndirella_input    Sep 30th 14:49       1h 5m 36s  Out Of Memory
+# 567094  c01_elabs_C1406_syndirella_input    Sep 30th 14:49       1h 4m 47s  Out Of Memory
+# 567098  c01_elabs_C1414_syndirella_input    Sep 30th 14:49      1h 17m 26s  Out Of Memory
+# 567100  c01_elabs_C1418_syndirella_input    Sep 30th 14:49          1h 46s  Out Of Memory
+# 567101  c01_elabs_C1419_syndirella_input    Sep 30th 14:49         56m 38s  Out Of Memory
+# 567109  c01_elabs_C1509_syndirella_input    Sep 30th 14:49          56m 1s  Out Of Memory
+# 567118  c01_elabs_C1603_syndirella_input    Sep 30th 14:49      1h 30m 47s  Out Of Memory
+# 567117  c01_elabs_C1602_syndirella_input    Sep 30th 14:49       1h 2m 36s  Out Of Memory
+# 567121  c01_elabs_C16455_syndirella_input   Sep 30th 14:49     10h 36m 15s  Out Of Memory
+# 567124  c01_elabs_C16890_syndirella_input   Sep 30th 14:49       1h 3m 35s  Out Of Memory
+# 567126  c01_elabs_C1719_syndirella_input    Sep 30th 14:49       2h 44m 2s  Out Of Memory
+# 567131  c01_elabs_C18032_syndirella_input   Sep 30th 14:49         52m 28s  Out Of Memory
+# 567137  c01_elabs_C195109_syndirella_input  Sep 30th 14:49      6h 48m 24s  Out Of Memory
+# 567149  c01_elabs_C20940_syndirella_input   Sep 30th 14:49      6h 58m 27s  Out Of Memory
+# 567150  c01_elabs_C20947_syndirella_input   Sep 30th 14:49         55m 50s  Out Of Memory
+# 567153  c01_elabs_C21087_syndirella_input   Sep 30th 14:49          56m 1s  Out Of Memory
+# 567151  c01_elabs_C20970_syndirella_input   Sep 30th 14:49         56m 31s  Out Of Memory
+# 567156  c01_elabs_C2124_syndirella_input    Sep 30th 14:49         57m 24s  Out Of Memory
+# 567159  c01_elabs_C22202_syndirella_input   Sep 30th 14:49       1h 2m 53s  Out Of Memory
+# 567165  c01_elabs_C23130_syndirella_input   Sep 30th 14:50      2h 36m 48s  Out Of Memory
+# 567175  c01_elabs_C25347_syndirella_input   Sep 30th 14:50       2h 3m 30s  Out Of Memory
+# 567179  c01_elabs_C26238_syndirella_input   Sep 30th 14:50          1h 44s  Out Of Memory
+# 567182  c01_elabs_C26592_syndirella_input   Sep 30th 14:50         59m 23s  Out Of Memory
+# 567183  c01_elabs_C26601_syndirella_input   Sep 30th 14:50         51m 44s  Out Of Memory
+# 567191  c01_elabs_C27918_syndirella_input   Sep 30th 14:50       1h 2m 19s  Out Of Memory
+# 567196  c01_elabs_C2911_syndirella_input    Sep 30th 14:50       1h 3m 32s  Out Of Memory
+# 567220  c01_elabs_C3542_syndirella_input    Sep 30th 14:50      1h 17m 22s  Out Of Memory
+# 567223  c01_elabs_C35886_syndirella_input   Sep 30th 14:50      1h 23m 41s  Out Of Memory
+# 567226  c01_elabs_C3768_syndirella_input    Sep 30th 14:50      1h 15m 31s  Out Of Memory
+# 567231  c01_elabs_C38623_syndirella_input   Sep 30th 14:50       1h 4m 19s  Out Of Memory
+# 567255  c01_elabs_C45621_syndirella_input   Sep 30th 14:50      1h 17m 42s  Out Of Memory
+# 567260  c01_elabs_C45769_syndirella_input   Sep 30th 14:50       8h 2m 34s  Out Of Memory
+# 567274  c01_elabs_C46519_syndirella_input   Sep 30th 14:50      9h 27m 43s  Out Of Memory
+# 567275  c01_elabs_C46525_syndirella_input   Sep 30th 14:50       5h 1m 52s  Out Of Memory
+# 567277  c01_elabs_C46563_syndirella_input   Sep 30th 14:50       1h 8m 17s  Out Of Memory
+# 567278  c01_elabs_C46587_syndirella_input   Sep 30th 14:50      1h 15m 36s  Out Of Memory
+# 567283  c01_elabs_C46913_syndirella_input   Sep 30th 14:50        1h 6m 2s  Out Of Memory
+# 567291  c01_elabs_C47059_syndirella_input   Sep 30th 14:50       1h 5m 52s  Out Of Memory
+# 567294  c01_elabs_C47143_syndirella_input   Sep 30th 14:50      1h 13m 53s  Out Of Memory
+# 567306  c01_elabs_C48055_syndirella_input   Sep 30th 14:50        1h 4m 8s  Out Of Memory
+# 567311  c01_elabs_C48099_syndirella_input   Sep 30th 14:50       1h 7m 46s  Out Of Memory
+# 567322  c01_elabs_C49818_syndirella_input   Sep 30th 14:51      1h 12m 11s  Out Of Memory
+# 567324  c01_elabs_C50246_syndirella_input   Sep 30th 14:51      1h 15m 52s  Out Of Memory
+# 567338  c01_elabs_C51493_syndirella_input   Sep 30th 14:51       1h 8m 33s  Out Of Memory
+# 567343  c01_elabs_C51690_syndirella_input   Sep 30th 14:51        1h 5m 1s  Out Of Memory
+# 567345  c01_elabs_C52055_syndirella_input   Sep 30th 14:51      1h 18m 40s  Out Of Memory
+# 567346  c01_elabs_C52315_syndirella_input   Sep 30th 14:51      1h 19m 32s  Out Of Memory
+# 567352  c01_elabs_C5313_syndirella_input    Sep 30th 14:51     12h 56m 59s  Out Of Memory
+# 567351  c01_elabs_C53105_syndirella_input   Sep 30th 14:51       1h 7m 45s  Out Of Memory
+# 567357  c01_elabs_C53746_syndirella_input   Sep 30th 14:51      1h 11m 48s  Out Of Memory
+# 567358  c01_elabs_C53750_syndirella_input   Sep 30th 14:51       1h 9m 44s  Out Of Memory
+# 567359  c01_elabs_C53753_syndirella_input   Sep 30th 14:51     12h 42m 56s  Out Of Memory
+# 567360  c01_elabs_C53762_syndirella_input   Sep 30th 14:51      1h 18m 44s  Out Of Memory
+# 567364  c01_elabs_C54541_syndirella_input   Sep 30th 14:51       1h 8m 31s  Out Of Memory
+# 567371  c01_elabs_C55754_syndirella_input   Sep 30th 14:51        1h 7m 8s  Out Of Memory
+# 567383  c01_elabs_C57322_syndirella_input   Sep 30th 14:51       1h 6m 21s  Out Of Memory
+# 567391  c01_elabs_C5996_syndirella_input    Sep 30th 14:51      1h 13m 30s  Out Of Memory
+# 567392  c01_elabs_C5997_syndirella_input    Sep 30th 14:51     12h 56m 56s  Out Of Memory
+# 567394  c01_elabs_C6003_syndirella_input    Sep 30th 14:51      1h 20m 40s  Out Of Memory
+# 567395  c01_elabs_C6013_syndirella_input    Sep 30th 14:51      1h 17m 58s  Out Of Memory
+# 567396  c01_elabs_C6021_syndirella_input    Sep 30th 14:51      1h 17m 11s  Out Of Memory
+# 567401  c01_elabs_C60642_syndirella_input   Sep 30th 14:51       1h 1m 29s  Out Of Memory
+# 567407  c01_elabs_C6181_syndirella_input    Sep 30th 14:51        1h 4m 1s  Out Of Memory
+# 567406  c01_elabs_C6170_syndirella_input    Sep 30th 14:51      1h 18m 20s  Out Of Memory
+# 567414  c01_elabs_C6343_syndirella_input    Sep 30th 14:51         41m 18s  Out Of Memory
+# 567415  c01_elabs_C63643_syndirella_input   Sep 30th 14:51     15h 47m 35s  Out Of Memory
+# 567418  c01_elabs_C65008_syndirella_input   Sep 30th 14:51         48m 34s  Out Of Memory
+# 567419  c01_elabs_C65117_syndirella_input   Sep 30th 14:51         35m 14s  Out Of Memory
+# 567433  c01_elabs_C68883_syndirella_input   Sep 30th 14:51       6h 9m 16s  Out Of Memory
+# 567436  c01_elabs_C69436_syndirella_input   Sep 30th 14:51         31m 40s  Out Of Memory
+# 567437  c01_elabs_C7041_syndirella_input    Sep 30th 14:51      3h 44m 24s  Out Of Memory
+# 567438  c01_elabs_C7045_syndirella_input    Sep 30th 14:51      1h 13m 16s  Out Of Memory
+# 567442  c01_elabs_C712_syndirella_input     Sep 30th 14:51             24m  Out Of Memory
+# 567456  c01_elabs_C733_syndirella_input     Sep 30th 14:51      1h 18m 17s  Out Of Memory
+# 567462  c01_elabs_C7499_syndirella_input    Sep 30th 14:51         43m 21s  Out Of Memory
+# 567464  c01_elabs_C7520_syndirella_input    Sep 30th 14:51         37m 26s  Out Of Memory
+# 567479  c01_elabs_C7642_syndirella_input    Sep 30th 14:51         31m 39s  Out Of Memory
+# 567488  c01_elabs_C7819_syndirella_input    Sep 30th 14:51         43m 31s  Out Of Memory
+# 567491  c01_elabs_C7839_syndirella_input    Sep 30th 14:51      4h 30m 47s  Out Of Memory
+# 567494  c01_elabs_C79400_syndirella_input   Sep 30th 14:51         30m 19s  Out Of Memory
+# 567497  c01_elabs_C8031_syndirella_input    Sep 30th 14:51     19h 42m 10s  Out Of Memory
+# 567498  c01_elabs_C8035_syndirella_input    Sep 30th 14:51         43m 32s  Out Of Memory
+# 567501  c01_elabs_C8054_syndirella_input    Sep 30th 14:51         42m 30s  Out Of Memory
+# 567502  c01_elabs_C8059_syndirella_input    Sep 30th 14:51       3h 24m 9s  Out Of Memory
+# 567504  c01_elabs_C8070_syndirella_input    Sep 30th 14:52         28m 52s  Out Of Memory
+# 567507  c01_elabs_C8165_syndirella_input    Sep 30th 14:52         31m 58s  Out Of Memory
+# 567512  c01_elabs_C83456_syndirella_input   Sep 30th 14:52         36m 52s  Out Of Memory
+# 567525  c01_elabs_C875_syndirella_input     Sep 30th 14:52         38m 29s  Out Of Memory
+# 567532  c01_elabs_C8891_syndirella_input    Sep 30th 14:52          30m 2s  Out Of Memory
+# 567535  c01_elabs_C8920_syndirella_input    Sep 30th 14:52         30m 25s  Out Of Memory
+# 567539  c01_elabs_C899_syndirella_input     Sep 30th 14:52         27m 59s  Out Of Memory
+# 567544  c01_elabs_C92303_syndirella_input   Sep 30th 14:52          34m 7s  Out Of Memory
+# 567489  c01_elabs_C7825_syndirella_input     Oct 1st 21:59         16m 55s  Out Of Memory
+# 567444  c01_elabs_C7140_syndirella_input     Oct 1st 21:59         10m 18s  Out Of Memory
+# 567531  c01_elabs_C8878_syndirella_input     Oct 1st 21:59           9m 7s  Out Of Memory
+# 567288  c01_elabs_C47021_syndirella_input    Oct 1st 22:07          9m 31s  Out Of Memory
+# 570593  c01_elabs_C1047                      Oct 2nd 10:43  3d 19h 47m 44s  Out Of Memory
+# 570596  c01_elabs_C10728                     Oct 2nd 10:43      11h 37m 4s  Out Of Memory
+# 570604  c01_elabs_C108379                    Oct 2nd 10:43         38m 44s  Out Of Memory
+# 570606  c01_elabs_C108383                    Oct 2nd 10:43         33m 12s  Out Of Memory
+# 570618  c01_elabs_C109063                    Oct 2nd 10:43         34m 47s  Out Of Memory
+# 570616  c01_elabs_C108828                    Oct 2nd 10:43   2d 9h 38m 10s  Out Of Memory
+# 570628  c01_elabs_C11169                     Oct 2nd 10:43      5h 10m 35s  Out Of Memory
+# 570638  c01_elabs_C11345                     Oct 2nd 10:43         45m 31s  Out Of Memory
+# 570645  c01_elabs_C114282                    Oct 2nd 10:43          1h 37s  Out Of Memory
+# 570669  c01_elabs_C119143                    Oct 2nd 10:43         50m 55s  Out Of Memory
+# 570672  c01_elabs_C120359                    Oct 2nd 10:43         41m 15s  Out Of Memory
+# 570673  c01_elabs_C120734                    Oct 2nd 10:43      19h 5m 27s  Out Of Memory
+# 570674  c01_elabs_C120894                    Oct 2nd 10:43      2h 37m 10s  Out Of Memory
+# 570694  c01_elabs_C13732                     Oct 2nd 10:44       1h 2m 34s  Out Of Memory
+# 570710  c01_elabs_C14716                     Oct 2nd 10:44     10h 50m 59s  Out Of Memory
+# 570722  c01_elabs_C15670                     Oct 2nd 10:44      1d 22h 12m  Out Of Memory
+# 570759  c01_elabs_C2607                      Oct 2nd 10:44         30m 30s  Out Of Memory
+# 570773  c01_elabs_C3291                      Oct 2nd 10:44     11h 53m 27s  Out Of Memory
+# 570878  c01_elabs_C58201                     Oct 2nd 10:44     18h 45m 32s  Out Of Memory
+# 570888  c01_elabs_C58690                     Oct 2nd 10:45      8h 51m 55s  Out Of Memory
+# 570916  c01_elabs_C60764                     Oct 2nd 10:45   2d 8h 32m 18s  Out Of Memory
+# 570922  c01_elabs_C61266                     Oct 2nd 10:45      2h 56m 24s  Out Of Memory
+# 570927  c01_elabs_C61575                     Oct 2nd 10:45         37m 25s  Out Of Memory
+# 570928  c01_elabs_C61598                     Oct 2nd 10:45          5h 11s  Out Of Memory
+# 570934  c01_elabs_C62126                     Oct 2nd 10:45         44m 40s  Out Of Memory
+# 570940  c01_elabs_C62466                     Oct 2nd 10:45      3d 52m 27s  Out Of Memory
+# 570953  c01_elabs_C63872                     Oct 2nd 10:45     20h 51m 59s  Out Of Memory
+# 570970  c01_elabs_C65268                     Oct 2nd 10:45          2h 32m  Out Of Memory
+# 571012  c01_elabs_C74983                     Oct 2nd 10:45      7h 44m 52s  Out Of Memory
+# 571039  c01_elabs_C9828                      Oct 2nd 10:45      1h 34m 51s  Out Of Memory
+# 571099  c01_elabs_C55308                     Oct 2nd 10:48   1d 1h 48m 10s  Out Of Memory
+# 570926  c01_elabs_C61503                     Oct 2nd 23:37         17m 34s  Out Of Memory
+# 570962  c01_elabs_C64652                     Oct 2nd 23:37         20m 55s  Out Of Memory
+# 570661  c01_elabs_C118804                    Oct 2nd 23:37  2d 17h 40m 51s  Out Of Memory
