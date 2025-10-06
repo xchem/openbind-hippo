@@ -12,7 +12,7 @@ echo $(ls -l "c01_elabs_C"*"_syndirella_input.csv" | wc -l)
 #     # sleep 5m
 # done
 
-KEY="c01_elabs_C55308_syndirella_input"
+KEY="c01_elabs_C55308"
 
 echo sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
 sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
