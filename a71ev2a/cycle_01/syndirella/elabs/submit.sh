@@ -8,7 +8,7 @@ REQUEUE="c01_elabs_C102808_syndirella_input c01_elabs_C10335_syndirella_input c0
 
 # for KEY in "c01_elabs_C"*"_syndirella_input.csv"; do
 for KEY in $REQUEUE; do
-	KEY=${KEY:0:-4}
+	# KEY=${KEY:0:-4}
     echo $KEY
     echo sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
     sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
