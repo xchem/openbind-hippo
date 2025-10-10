@@ -1,42 +1,20 @@
 #!/bin/bash
 set -e
+shopt -s nullglob
 
 which sb.sh
-echo $(ls -l "c01_elabs_C"*"_syndirella_input.csv" | wc -l)
+echo $(ls -l *"c01_elabs_C"*"_syndirella_input.csv" | wc -l)
 
-for KEY in *_c??_elabs_C*; do
+for KEY in *_c??_elabs_C*.csv; do
 
-    KEY=${KEY:0:-21}
-    echo $KEY
-    echo sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
-    sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
+	KEY=${KEY:0:-21}
+	echo $KEY
 
-done
-
-exit 1
-
-# REQUEUE="c01_elabs_C102808_syndirella_input c01_elabs_C10335_syndirella_input c01_elabs_C10549_syndirella_input c01_elabs_C106545_syndirella_input c01_elabs_C10704_syndirella_input c01_elabs_C10831_syndirella_input c01_elabs_C11207_syndirella_input c01_elabs_C11204_syndirella_input c01_elabs_C129593_syndirella_input c01_elabs_C1384_syndirella_input c01_elabs_C1382_syndirella_input c01_elabs_C1386_syndirella_input c01_elabs_C1391_syndirella_input c01_elabs_C1392_syndirella_input c01_elabs_C1401_syndirella_input c01_elabs_C1399_syndirella_input c01_elabs_C1404_syndirella_input c01_elabs_C1406_syndirella_input c01_elabs_C1414_syndirella_input c01_elabs_C1418_syndirella_input c01_elabs_C1419_syndirella_input c01_elabs_C1509_syndirella_input c01_elabs_C1603_syndirella_input c01_elabs_C1602_syndirella_input c01_elabs_C16455_syndirella_input c01_elabs_C16890_syndirella_input c01_elabs_C1719_syndirella_input c01_elabs_C18032_syndirella_input c01_elabs_C195109_syndirella_input c01_elabs_C20940_syndirella_input c01_elabs_C20947_syndirella_input c01_elabs_C21087_syndirella_input c01_elabs_C20970_syndirella_input c01_elabs_C2124_syndirella_input c01_elabs_C22202_syndirella_input c01_elabs_C23130_syndirella_input c01_elabs_C25347_syndirella_input c01_elabs_C26238_syndirella_input c01_elabs_C26592_syndirella_input c01_elabs_C26601_syndirella_input c01_elabs_C27918_syndirella_input c01_elabs_C2911_syndirella_input c01_elabs_C3542_syndirella_input c01_elabs_C35886_syndirella_input c01_elabs_C3768_syndirella_input c01_elabs_C38623_syndirella_input c01_elabs_C45621_syndirella_input c01_elabs_C45769_syndirella_input c01_elabs_C46519_syndirella_input c01_elabs_C46525_syndirella_input c01_elabs_C46563_syndirella_input c01_elabs_C46587_syndirella_input c01_elabs_C46913_syndirella_input c01_elabs_C47059_syndirella_input c01_elabs_C47143_syndirella_input c01_elabs_C48055_syndirella_input c01_elabs_C48099_syndirella_input c01_elabs_C49818_syndirella_input c01_elabs_C50246_syndirella_input c01_elabs_C51493_syndirella_input c01_elabs_C51690_syndirella_input c01_elabs_C52055_syndirella_input c01_elabs_C52315_syndirella_input c01_elabs_C5313_syndirella_input c01_elabs_C53105_syndirella_input c01_elabs_C53746_syndirella_input c01_elabs_C53750_syndirella_input c01_elabs_C53753_syndirella_input c01_elabs_C53762_syndirella_input c01_elabs_C54541_syndirella_input c01_elabs_C55754_syndirella_input c01_elabs_C57322_syndirella_input c01_elabs_C5996_syndirella_input c01_elabs_C5997_syndirella_input c01_elabs_C6003_syndirella_input c01_elabs_C6013_syndirella_input c01_elabs_C6021_syndirella_input c01_elabs_C60642_syndirella_input c01_elabs_C6181_syndirella_input c01_elabs_C6170_syndirella_input c01_elabs_C6343_syndirella_input c01_elabs_C63643_syndirella_input c01_elabs_C65008_syndirella_input c01_elabs_C65117_syndirella_input c01_elabs_C68883_syndirella_input c01_elabs_C69436_syndirella_input c01_elabs_C7041_syndirella_input c01_elabs_C7045_syndirella_input c01_elabs_C712_syndirella_input c01_elabs_C733_syndirella_input c01_elabs_C7499_syndirella_input c01_elabs_C7520_syndirella_input c01_elabs_C7642_syndirella_input c01_elabs_C7819_syndirella_input c01_elabs_C7839_syndirella_input c01_elabs_C79400_syndirella_input c01_elabs_C8031_syndirella_input c01_elabs_C8035_syndirella_input c01_elabs_C8054_syndirella_input c01_elabs_C8059_syndirella_input c01_elabs_C8070_syndirella_input c01_elabs_C8165_syndirella_input c01_elabs_C83456_syndirella_input c01_elabs_C875_syndirella_input c01_elabs_C8891_syndirella_input c01_elabs_C8920_syndirella_input c01_elabs_C899_syndirella_input c01_elabs_C92303_syndirella_input c01_elabs_C7825_syndirella_input c01_elabs_C7140_syndirella_input c01_elabs_C8878_syndirella_input c01_elabs_C47021_syndirella_input"
-
-### REQUEUE JOBS WITH NO OUTPUT
-for KEY in "c01_elabs_C"*"_syndirella_input.csv"; do
-    KEY=${KEY:0:-4}
-
-    if [ -d $KEY ]; then
-        COUNT=$(ls -l $KEY/*/*.pkl.gz 2>/dev/null | wc -l)
-
-        if [ $COUNT -eq 0 ]; then
-		echo $KEY $COUNT
-        	echo sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
+	files=($KEY/*/*_to_hippo.pkl.gz)
+	if (( ${#files[@]} )); then
+		echo "Output exists"
+	else
+		echo sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
 		sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
 	fi
-
-    fi
-
 done
-
-
-# # for KEY in $REQUEUE; do
-#     echo $KEY
-#     sb.sh --job-name $KEY --ntasks=1 --cpus-per-task=1 --mem=8GB $HOME2/slurm/run_bash_with_conda.sh run_elaboration.sh $KEY >> sbatch.log
-#     # sleep 5m
-# done
