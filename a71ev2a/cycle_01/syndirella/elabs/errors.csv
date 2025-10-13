@@ -1,13 +1,13 @@
 SMARTSError,Reaction name Amine_alkylation not found in SMARTS handler.,25
+ValueError,ChemicalParserException: initMatchers() must be called before runReactants(),18
+NoReactants,All reactants were filtered for r2. No products will be found.,13
 SMARTSError,Reaction name Formation_of_sulfonamide_from_halide_-_Shavnya_reaction not found in SMARTS handler.,12
 SMARTSError,Reaction name Sp3-sp2_Suzuki_coupling not found in SMARTS handler.,11
-ValueError,ChemicalParserException: initMatchers() must be called before runReactants(),10
+NoReactants,All reactants were filtered for r1. No products will be found.,11
 SMARTSError,Reaction name Sp2-sp2_Suzuki_coupling not found in SMARTS handler.,7
 SMARTSError,Reaction name Isocyanate_to_urea not found in SMARTS handler.,6
-NoReactants,All reactants were filtered for r2. No products will be found.,5
-NoReactants,All reactants were filtered for r1. No products will be found.,5
+KeyError,combined,6
 SMARTSError,Reaction name Petasis-borono_Mannich_reaction not found in SMARTS handler.,4
-KeyError,combined,3
 OSError,File error: Bad input file /opt/xchem-fragalysis-2/maxwin/openbind-hippo/a71ev2a/cycle_01/syndirella/elabs/c01_elabs_syndirella_inspiration_hits.sdf,2
 ProductFormationError,All products filtered for step 1.,1
 ReactionError,No atoms found involved in reaction Amidation in mol CC(Sc1ccccn1)C(=O)O and C1CC12CNOC2,1
