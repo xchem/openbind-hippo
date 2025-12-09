@@ -16,7 +16,11 @@ aligned_dir = target_dir / "aligned_files"
 
 animal = hippo.HIPPO(target_name, target_dir / f"{target_name}.sqlite")
 
-pose_pool = animal.poses.get_by_metadata_substring_match("GNINA pK")
+# pose_pool = animal.poses.get_by_metadata_substring_match("GNINA pK")
+
+pose_pool = animal.poses
+
+print(pose_pool)
 
 for i,pose in enumerate(pose_pool):
     mrich.print(i, pose)
@@ -24,3 +28,5 @@ for i,pose in enumerate(pose_pool):
         pose.calculate_interactions()
     except Exception as e:
         mrich.error(pose, e)
+
+# sb.sh --job-name 'd68ev3c_interactions' /opt/xchem-fragalysis-2/maxwin/slurm/run_python.sh -m hippo calculate-interactions $BULK/TARGETS/A71EV2A/A71EV2A.sqlite

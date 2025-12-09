@@ -29,7 +29,11 @@ for i,file in enumerate(files):
         pose_name = file.parent.parent.name.split("_")[-1]
         scaffold = animal.poses[pose_name].compound
     
-        animal.add_syndirella_elabs(file, scaffold_compound=scaffold, product_tags=product_tags, pose_tags=pose_tags)
+        animal.add_syndirella_elabs(file, 
+                                    scaffold_compound=scaffold, 
+                                    product_tags=product_tags, 
+                                    pose_tags=pose_tags,
+                                   )
         
     except Exception as e:
         mrich.error(file)
