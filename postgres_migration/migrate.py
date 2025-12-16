@@ -23,16 +23,25 @@ animal = hippo.HIPPO(
 # define targets to migrate
 
 TARGETS = [
-    "A71EV2A",
-    "D68EV3C",
-    "XX01ZVNS2B",
+    # "A71EV2A",
+    # "D68EV3C",
+    # "XX01ZVNS2B",
+    # "A71EV2AZ", # pose_alias_from_metadata_field="observation_longname"
+    # "ZIKA_NS3_helicase", # pose_alias_from_metadata_field="observation_longname"
+    # "Flavi_NS5_RdRp",
+    # "../../CHIKV_FFF/hippo_prod/CHIKV_prod10c.sqlite", # interactions=False, features=False,
+    
+    # "CpKRS", # FAILED w/ pose_alias_from_metadata_field="observation_longname"
 ]
 
 for target in TARGETS:
 
     mrich.h1(target)
 
-    path = Path(environ["BULK"]) / "TARGETS" / target / f"{target}.sqlite"
+    if target.endswith(".sqlite"):
+        path = Path(target)
+    else:
+        path = Path(environ["BULK"]) / "TARGETS" / target / f"{target}.sqlite"
 
     mrich.var("path", path)
     
@@ -46,6 +55,7 @@ for target in TARGETS:
 
     mrich.var(backup_path.name.removesuffix(".sqlite"), backup_path)
     
-    animal.db.migrate_sqlite(backup_path)
+    animal.db.migrate_sqlite(backup_path) #, interactions=False, features=False) #, pose_alias_from_metadata_field="observation_longname")
 
     animal.db.commit()
+    mrich.success("Committed")
